@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Here are the scores</h2>
+  <div class="well">
+    <p>You tried : <%= @game_results.fetch(:attempt) %></p>
+    <p>Time taken to answer : <%= @game_results.fetch(:time) %> seconds</p>
+    <p>Translation of your word : <%= @game_results.fetch(:translation) %></p>
+    <p>Your score : <%= @game_results.fetch(:score) %></p>
+    <p>Message : <%= @game_results.fetch(:message) %></p>
+  </div>
+
+  <%= link_to "New Game", game_path, class: "btn btn-primary" %>
+</div>
